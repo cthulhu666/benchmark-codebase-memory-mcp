@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Target codebase — clone it yourself; see README.md Reproducing results
+target_repo/
+
+# Intermediate / scratch result files (keep only fair.json)
+results/latest.json
+results/mcp_chars.json
+results/final.json

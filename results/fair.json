@@ -1,0 +1,122 @@
+{
+  "note": "chars / 4 = estimated tokens; tool response chars only",
+  "mcp_project": "Users-cthulhu-Dev-benchmark-codebase-memory-mcp-target_repo",
+  "results": [
+    {
+      "task_id": "t1_callers",
+      "agent": "file_agent",
+      "total_chars": 2317,
+      "estimated_tokens": 579,
+      "verified": true,
+      "verify_detail": "all 3 gold items present",
+      "calls": [
+        {
+          "tool": "grep_code",
+          "chars": 2317
+        }
+      ]
+    },
+    {
+      "task_id": "t1_callers",
+      "agent": "mcp_agent",
+      "total_chars": 589,
+      "estimated_tokens": 147,
+      "verified": true,
+      "verify_detail": "all 3 gold items present",
+      "calls": [
+        {
+          "tool": "query_graph",
+          "chars": 589
+        }
+      ]
+    },
+    {
+      "task_id": "t2_pattern",
+      "agent": "file_agent",
+      "total_chars": 17295,
+      "estimated_tokens": 4323,
+      "verified": true,
+      "verify_detail": "all 4 gold items present",
+      "calls": [
+        {
+          "tool": "grep_code",
+          "chars": 17295
+        }
+      ]
+    },
+    {
+      "task_id": "t2_pattern",
+      "agent": "mcp_agent",
+      "total_chars": 32731,
+      "estimated_tokens": 8182,
+      "verified": true,
+      "verify_detail": "all 4 gold items present",
+      "calls": [
+        {
+          "tool": "search_code",
+          "chars": 32731
+        }
+      ]
+    },
+    {
+      "task_id": "t3_impact",
+      "agent": "file_agent",
+      "total_chars": 807,
+      "estimated_tokens": 201,
+      "verified": true,
+      "verify_detail": "all 2 gold items present",
+      "calls": [
+        {
+          "tool": "grep_code",
+          "chars": 807
+        }
+      ]
+    },
+    {
+      "task_id": "t3_impact",
+      "agent": "mcp_agent",
+      "total_chars": 256,
+      "estimated_tokens": 64,
+      "verified": true,
+      "verify_detail": "all 2 gold items present",
+      "calls": [
+        {
+          "tool": "query_graph",
+          "chars": 256
+        }
+      ]
+    },
+    {
+      "task_id": "t4_callees",
+      "agent": "file_agent",
+      "total_chars": 3184,
+      "estimated_tokens": 796,
+      "verified": true,
+      "verify_detail": "all 3 gold items present",
+      "calls": [
+        {
+          "tool": "grep_code",
+          "chars": 89
+        },
+        {
+          "tool": "read_function",
+          "chars": 3095
+        }
+      ]
+    },
+    {
+      "task_id": "t4_callees",
+      "agent": "mcp_agent",
+      "total_chars": 1213,
+      "estimated_tokens": 303,
+      "verified": true,
+      "verify_detail": "all 3 gold items present",
+      "calls": [
+        {
+          "tool": "trace_path",
+          "chars": 1213
+        }
+      ]
+    }
+  ]
+}
